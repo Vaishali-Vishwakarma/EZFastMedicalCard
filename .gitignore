@@ -480,6 +480,7 @@ $RECYCLE.BIN/
 .vs/EZFastMedicalCard/v17/
 .vs/EZFastMedicalCard/DesignTimeBuild/
 MCN-Projects\.vs\
+MCN-Projects\.vs\.slnx.sqlite
 
 # Ignore build output directory for Debug configuration in .NET 6.0 projects
 bin/Debug/.net6.0/
