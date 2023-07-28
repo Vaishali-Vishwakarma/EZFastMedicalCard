@@ -786,8 +786,8 @@ body {
 }
 
 .card-body h4 {
-  font-size: 48px;
-  color: #ffffff;
+    font-size: 48px;
+    color: #ffffff;
 }
 
 .dropdown-toggle-home {
@@ -801,12 +801,12 @@ body {
 }
 
 .dropdown-toggle-home:hover {
-  background-color: #ffffff;
-  color: #000000;
+    background-color: #ffffff;
+    color: #000000;
 }
 
 .dropdown-toggle-home::after {
-  margin-left: 16.255em !important;
+    margin-left: 16.255em !important;
 }
 
 .dropdown-menu-home {
@@ -1061,6 +1061,30 @@ hr {
   background-size: 100% 100%;
   height: 100vh;
 }
+.img-doctor-login {
+  background: url("../images/img-doctor-login.png") no-repeat;
+  background-position: top center;
+  background-size: 100% 100%;
+  height: 100vh;
+}
+.img-admin-login {
+  background: url("../images/img-admin-login.png") no-repeat;
+  background-position: top center;
+  background-size: 100% 100%;
+  height: 100vh;
+}
+.img-partner-login {
+  background: url("../images/img-partner.png") no-repeat;
+  background-position: top center;
+  background-size: 100% 100%;
+  height: 100vh;
+}
+.img-medical-assistant-login {
+  background: url("../images/img-madical-ass-login.png") no-repeat;
+  background-position: top center;
+  background-size: 100% 100%;
+  height: 100vh;
+}
 
 .signup-login-text {
   margin-top: 40px;
@@ -1294,14 +1318,7 @@ hr {
   font-size: 2rem;
   color: var(--primary-color);
   font-weight: 600;
-}
-
-.breadcrumb-item a::after {
-  content: "";
-  display: block;
-  height: 4px;
-  width: 168px;
-  background: var(--primary-color);
+  border-bottom: 4px solid;
 }
 
 .header-right{
@@ -1399,8 +1416,347 @@ hr {
 
 }
 
+footer{
+    position: absolute;
+    background: #000;
+    width: 100%;
+    color: #fff;
+    padding: 25px;
 .footer-dashboard{
   background: #2d2d2d;
   color: #ffffff;
   padding: 20px;
+}
+
+.profile-information .breadcrumb-item a::after {
+  display: none;
+}
+.profile-information .breadcrumb-item a {
+.mmj-card .breadcrumb-item a {
+  font-weight: 400;
+}
+
+.profile-information .accordion-button{
+  color:#fff;
+  background-color: #01803A;
+  font-family: 'Open Sans';
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 0 !important;
+  letter-spacing: 1px;
+}
+.accordion{
+  margin-top: 40px !important;
+}
+.profile-information .accordion-item,.accordion{
+  border-radius: 0;
+  margin:20px 0 !important;
+}
+.profile-information .accordion-button::after{
+  position: absolute;
+    right: 30px;
+  background-image: url("../images/down-arrow.png");
+  filter: invert();
+}
+.profile-information .accordion-button:focus,.profile-information .form-select:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.profile-information .form-control,.profile-information .form-select{
+  height: 35px;
+  width: 260px;
+  border:1px solid #d3d3d3 !important;
+}
+.profile-information .form-label{
+font-weight: 500;
+
+}
+.profile-information .form-control::placeholder,.profile-information .form-select{
+  color: #a2a2a2 ;
+  font-size: 12px;
+  font-weight: 400;
+}
+.profile-information .form-group{
+  margin-bottom: 10px;
+}
+
+.profile-information .genders .form-radio{
+margin-top: -10px;
+}
+.profile-information .genders{
+  width: 230px;
+  margin-top: 5px;;
+}
+.profile-information .genders .form-label{
+font-size: 14px !important;
+  }
+
+  input[type="radio"], .profile-information .form-check{
+accent-color: #01803A;
+height:18px; 
+min-width:18px;
+margin-top: 0px !important;
+cursor: pointer;
+ }
+ .profile-information input[type="checkbox"]{
+  margin:0 20px;
+ }
+
+ .profile-information .actions .btn, .profile-information .actions .btn:hover{
+  background-color: #019644 !important;
+  color: #fff !important;  font-size: 20px;
+  padding-top: 10px;
+  border-radius: 5px;
+  margin-left: 10px;
+  height: 50px;
+  width: 100px;
+  font-weight: 400;
+ }
+ 
+.profile-information .modal-content{
+  width: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    border-radius: 0;
+}
+.profile-information .modal-header{
+  background: var(--primary-color);
+  border-radius: 0;
+  justify-content: center;
+}
+.profile-information .modal-title{
+  position: absolute !important;
+  color: #fff;
+}
+.profile-information .modal-header .btn-close {
+  opacity: 1;
+  filter: invert();
+}
+
+.profile-information .modal-body{
+  padding: 25px 85px  !important;
+  font-size: 18px;
+  font-weight: 500;
+}
+.profile-information .modal-footer{
+  justify-content: center;
+}
+.profile-information .modal-footer .btn{
+  padding: 5px;
+  font-weight: 100;
+  min-width: 140px;
+}
+.profile-information .modal-footer .btn-danger{
+  background-color: #A90000;
+}
+
+.prof-info > .col-sm-6:nth-child(even) {
+    max-width: 380px;
+}
+.prof-info .textarea::placeholder{
+    font-size: 12px !important;
+}
+.prof-info .textarea {
+    width: 800px !important;
+    border: 1px solid #878787;
+    padding: 10px;
+    resize: none;
+}
+@media(max-width:1320px) {
+    .prof-info > .col-sm-6 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+        .prof-info, .prof-info > .col-sm-6 > .form-group {
+            justify-content: center !important;
+        }
+
+            .prof-info .textarea {
+                width: 75% !important;
+            }
+}
+.textarea-container {
+    display: flex;
+    justify-content: center;
+    padding-left: 268px;
+}
+
+.medical-history .textarea{
+width: 100% !important;
+}
+.textarea::placeholder{
+  font-size: 14px;
+}
+
+.mmj-card .body-dimensions .form-control{
+  width: 50px !important;
+  font-size: 14px;
+  border: 1px solid #000000 !important;
+  border-right: hidden !important;
+  border-radius: 0;
+}
+.medical-history .body-dimensions input+span::after{
+  color: #fff;
+  background: var(--primary-color);
+  padding: 5.5px 15px;
+  position: absolute;
+}
+
+.medical-history .body-dimensions input.height-ft+span::after{
+  content: "ft";
+}
+.medical-history .body-dimensions input.height-in+span::after{
+  content: "in";
+}
+.medical-history .body-dimensions input.weight-lb+span::after{
+  content: "lb";
+}
+
+.medical-history .medical-responses{
+  width: 100%;
+  overflow-y: auto;
+  border: 1px solid #d3d3d3;
+}
+.medical-history .medical-responses .heading-sm.legend{
+  position: absolute;
+  bottom: 480px;
+  background: #fff;
+  right: 270px;
+  padding: 0 5px;
+  font-weight: 600;
+}
+.medical-history .medical-responses .responses-list{
+  margin-top: 20px;
+}
+.medical-history .medical-responses .responses-list .list-item:first-child{
+margin-left:20px;
+}
+.medical-history .medical-responses .responses-list .list-item{
+ margin: 5px 10px;
+  font-weight: 500;
+  margin-left:55px;
+}
+
+.options-container .form-label{
+  font-weight: 400;
+}
+.medical-history .notice-text{
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.medical-history .file-upload-container .file-upload-icon
+{
+background-color: #ABFFD1;
+padding: 10px;
+
+}
+.medical-history .file-upload-container .file-upload-text
+{
+background-color: #E2FBED;
+padding:10px;
+color: #666666;
+font-weight: 400;
+}
+
+.medical-history .file-upload-container .filename-text{
+  font-size: 16px;
+  padding:10px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.mmj-card .documents .image-container
+{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.mmj-card .documents .text-muted{
+    font-size: 14px;
+    font-weight: 400;
+    color: #666666;
+}
+
+.mmj-card .documents .image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mmj-card .documents .user-image-container{
+    margin-top:10px;
+}
+.mmj-card .documents .document-image-container{
+    margin-top:30px;
+}
+
+.notification .notification-list .list-item .title{
+    font-size: 20px;
+    font-weight: 500;
+    margin:0 10px;
+}
+
+.notification .notification-list .list-item .timestamp{
+margin:0 10px;
+font-size: 16px;
+color: #00000092;
+font-weight: 400;
+}
+
+.notification .notification-list .list-item{
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #7b7b7b92;
+}
+
+.mmj-card.summary .accordion-button::after{
+    display: none;
+}
+
+.summary .accordion-item .edit-link{
+    position: absolute;
+    right: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    z-index: 2;
+}
+.summary .accordion-item .edit-icon{
+height: 13px;
+    width: 13px;
+    position: relative;
+    top: -2px;
+    margin: 2px;
+    right: 3px;
+}
+.mmj-card.summary .heavy{
+    font-weight: 500;
+}
+
+.mmj-card.summary  .light{
+    font-weight: 400;
+}
+
+.accordion-button:hover{
+    z-index: 1;
+}
+.mmj-card.summary .accordion-body .responses{
+    font-size: 16px;
+    font-weight: 400;
+}
+.mmj-card.summary .extra.light{
+font-size: 10px;
+}
+
+.user-icon a img{
+    object-fit: cover;
 }
